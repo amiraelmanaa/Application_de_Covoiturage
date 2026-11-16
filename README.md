@@ -50,7 +50,7 @@ Tests use the separate `carpooling_test` database, so they never touch developme
 |---|---|
 | `failed to connect to the docker API` | Start Docker Desktop and wait for "Engine running" |
 | `database "carpooling_test" does not exist` | Run `docker exec -it carpooling-db psql -U postgres -c "CREATE DATABASE carpooling_test;"` |
-| `port 5432 already in use` | A local PostgreSQL is running. Stop it, or change the port mapping in `docker-compose.yml` |
+| `port 5433 already in use` | A local PostgreSQL is running. Stop it, or change the port mapping in `docker-compose.yml` (the port we're using is 5433) |
 | `Cannot find module ...` | Run `npm install` inside `backend/` |
 
 To reset the databases completely (deletes ALL data): `docker compose down -v` then `docker compose up -d`.
