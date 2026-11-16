@@ -4,7 +4,7 @@ Carpooling application. Stack: Angular (frontend), NestJS (backend), PostgreSQL,
 
 ## Prerequisites
 
-- Node.js 20+ (check with `node -v`)
+- Node.js 24+ (check with `node -v`)
 - Docker Desktop (must be **running** before any docker command)
 - Git
 
